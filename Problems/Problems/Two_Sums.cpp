@@ -1,4 +1,6 @@
-#include <iostream>	
+#include <iostream>
+#include <algorithm>
+#include <vector>
 /*/
 Given an array of integers numsand an integer target, return indices of the two numbers such that they add up to target.
 
@@ -29,6 +31,29 @@ Example 2 :
 	- 109 <= target <= 109
 	Only one valid answer exists.
 */
+
+class Solution {
+public:
+	vector<int> twoSum(vector<int>& nums, int target) {
+		unsigned int inputNumSize = nums.size();
+		vector<int> userAnswer;
+		for (int i = 0; i < inputNumSize; i++)
+		{
+			for (int j = i + 1; j < inputNumSize; j++)
+			{
+				if (nums[i] + nums[j] == target)
+				{
+					userAnswer.push_back(i);
+					userAnswer.push_back(j);
+					break;
+				}
+			}
+		}
+		return userAnswer;
+
+	}
+};
+
 
 int main()
 {
