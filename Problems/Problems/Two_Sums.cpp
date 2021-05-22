@@ -31,6 +31,7 @@ Example 2 :
 	- 109 <= target <= 109
 	Only one valid answer exists.
 */
+using namespace std;
 
 class Solution {
 public:
