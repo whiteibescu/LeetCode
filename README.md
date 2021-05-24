@@ -1,7 +1,7 @@
 # LeetCode
 
 
-![image](./desktop/fire.jpg)
+![image](C:\Users\white\Desktop\fire.jpg)
 
 [1.TwoSum](https://github.com/whiteibescu/LeetCode/blob/main/_1_TwoSum_CSharp_Dictionary/Program.cs)
 
