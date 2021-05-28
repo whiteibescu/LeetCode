@@ -39,15 +39,12 @@ namespace _13_RomantoInteger
                 int current = dict[s[i]];   //1.Get the index of the string
                                             //2.If you get the key of a dictionary
                                             //you would get the value of the key                                       
-                Console.WriteLine("1이 나와야한다 :" + current);
-                Console.WriteLine("5가 나와야한다 :" + current);
                 result += previous > current ? -current : current;
-                Console.WriteLine("1이 나와야한다 :" + result);
-                Console.WriteLine("4가 나와야한다 :" + result);
+                
                 //if the current is smaller than the
                 //previous subtract and if bigger add
-                //ex) IV Iis smaller than V than subtract I
-                //ex) VI V is bigger than I so add I.
+                //ex) IV V is bigger than I than subtract I
+                //ex) VI I is bigger than V so add I.
                 previous = current;
             }
 
