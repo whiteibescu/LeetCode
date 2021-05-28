@@ -14,7 +14,6 @@ namespace _9_PalindromNumber_CSharp
         }*/
     class Program
     {
-
         static void Main(string[] args)
         {
             Solution();
@@ -36,6 +35,10 @@ namespace _9_PalindromNumber_CSharp
 
         public static bool IsPalindrome(int x)
         {
+            if (x < 0)
+            {
+                return false;
+            }
             string num = x.ToString();
             char[] split = num.ToCharArray();
             List<int> splitlist = new List<int>();
